@@ -13,7 +13,7 @@ class CreateBrandsTable extends Migration
      */
     public function up()
     {
-        Schema::create('_brands', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
             $table->string('logo' , 255);
@@ -30,6 +30,6 @@ class CreateBrandsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_brands');
+        Schema::dropIfExists('brands');
     }
 }
