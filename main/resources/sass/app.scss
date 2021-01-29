@@ -1,1 +1,22 @@
-//
+body {
+    background-color: purple;
+}
+
+footer,
+header {
+    text-align: center;
+}
+
+li {
+    width: 50%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

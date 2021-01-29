@@ -17,7 +17,7 @@ class CreateEmployeesTable extends Migration
             $table->id();
             $table->string('name',100);
             $table->string('lastname',100);
-            $table->timestamp('date_of_hiring');
+            $table->date('date_of_hiring');
             $table->timestamps();
         });
     }
