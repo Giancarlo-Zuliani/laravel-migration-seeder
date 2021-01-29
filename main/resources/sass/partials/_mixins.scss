@@ -4,3 +4,14 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin consoleanchor {
+    a {
+        margin-right: 15px;
+        font-size: 1.8rem;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
