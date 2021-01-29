@@ -1,22 +1,6 @@
-body {
-    background-color: purple;
-}
-
-footer,
-header {
-    text-align: center;
-}
-
-li {
-    width: 50%;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-    &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-    }
-}
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/_common.scss";
+@import "partials/_main.scss";
+@import "partials/_header.scss";
+@import "partials/_footer.scss";

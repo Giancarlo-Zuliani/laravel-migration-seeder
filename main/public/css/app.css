@@ -1,24 +1,19 @@
 body {
-  background-color: purple;
+  min-height: 100vh;
+  background-image: linear-gradient(180deg, #9fedd7 0%, #026670 100%);
 }
 
-footer,
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-li {
-  width: 50%;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
