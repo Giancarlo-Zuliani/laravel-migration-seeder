@@ -60,6 +60,9 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 footer a {

@@ -1,4 +1,7 @@
 footer {
     @include flex(row, center, space-between);
     @include consoleanchor;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

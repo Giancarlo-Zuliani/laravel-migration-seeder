@@ -23,4 +23,20 @@ class BrandController extends Controller
         return view('pages.brand-show' , compact('brand'));
 
     }
+    public function create(){
+
+        return view('pages.brand-create');
+    }
+
+    public function store(Request $request){
+     $newbrand = new Brand;
+     $newbrand -> name = $request -> get('name');
+     $newbrand -> logo = $request -> get('logo');
+     $newbrand -> phone_number = $request -> get('phone_number');
+     $newbrand -> num_of_location = $request -> get('num_of_location');
+
+
+     $newbrand -> save();
+     return redirect() -> route('home');    
+    }
 }

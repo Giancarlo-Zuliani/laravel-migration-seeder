@@ -24,3 +24,9 @@ Route::get('/location' , 'LocationController@index')
 
 Route::get('location/{id}' , 'LocationController@show')
     -> name('location-show');
+
+Route::get('/new/brand' , "BrandController@create" )
+    -> name('create-brand');
+
+Route::post('/new/brand/store' , 'BrandController@store') 
+    -> name ('store-brand') ;  
